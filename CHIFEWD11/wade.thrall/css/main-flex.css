@@ -1,0 +1,270 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.clearfix:after {
+    display: block;
+    height: 0;
+    clear: both;
+    line-height: 0;
+    content: ".";
+
+    visibility: hidden;
+}
+ 
+body {
+    text-align: center;
+    color: #000000;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+}
+
+p {
+   font-family: 'Dosis', sans-serif;
+   
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+ 
+/* container - place inside each section or around the entire page depending on your layout */
+.site {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    padding: 20px 20px 0 90px;
+}
+ 
+/*--- header section - put whatever you want here ---*/
+#header {
+    
+}
+
+/*Sections*/
+
+#homepage {
+    background-image: url(../images/ribbons_transparent.png);
+    background-position: top right;
+    min-height: 600px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 92%;
+    background-attachment: fixed;
+}
+
+#liturgical {
+    background-image: url(../images/2014_525_MicheleBeaulieux-10528.jpg);
+    background-size: cover;
+    min-height: 600px;
+}
+
+#lordsprayer {
+    background-image: url(../images/church_movement.png);
+}
+
+#rosary {
+    background-image: url(../images/);
+}
+
+#testimonial {
+    background-image: url(../images/);
+}
+
+#michele {
+    background-image: url(../images/);
+}
+
+#events {
+    background-image: url(../images/);
+}
+
+#contact {
+    
+}
+/*.banner {
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+.more {
+  text-align: right;
+}
+ 
+/*--- horizontal &quot;block&quot; menu ---*/
+
+
+.nav-north {
+  display: none;
+}
+
+.nav-south {
+}
+
+nav li {
+  /*float: left;
+  text-align: center;
+  padding: 1px 7px 2px 7px;
+  border-left: 2px solid #ccc;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  */
+  display: inline-block;
+}
+
+nav a {
+    color: #da0808;
+ }
+nav li:first-child {
+    border-left: 0px;
+}
+
+nav a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+section {
+}
+
+.hamburger {
+  display: inline-block;
+  width: 70px;
+  height: 100px;
+  background-image: url(../images/rosary_menu.png);
+  background-size: 70px 100px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 900;
+  top: 10px;
+  left: 10px;
+  float: left;
+}
+/*
+#menu {
+    float: left;
+    z-index: 5;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#menu li {
+    display: block;
+    float: left;
+}
+#menu li a {
+    display: block;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    height: 50px;
+    width: 125px;
+    padding: 5px 10px 5px 10px;
+}
+*/
+
+h1 {
+    font-family: 'Abril Fatface', Times, cursive;
+    font-weight: 700;
+    font-size: 44px;
+    float: left;
+    padding: 0 16px 9px 0px;
+    line-height: 1;
+    margin: 0;
+    color: #da0808;
+}
+
+.tagline {
+    font-family: Dosis, sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 23px;
+    padding-top: 13px;
+    float: left;
+    margin: 0;
+    /* padding-left: 40px; */
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: normal;
+    font-size: 27px;
+    margin: 0;
+    float: left;
+    color: black;
+    line-height: 1.3em;
+    width: 35%;
+    float: left;
+}
+ 
+/*--- content section - put whatever you want here ---*/
+
+.blurb {
+    position: absolute;
+    top:45%;
+    padding: 0px;
+    float: left;
+}
+
+#homepage .blurb h2, p {
+  color: #000;
+}
+
+#liturgical .blurb h2, p {
+  color: #fff;
+}
+
+.blurb p {
+  clear: both;
+  float: left;
+  width: 50%;
+
+}
+
+.blurb a:hover {
+  font-weight: bold;
+}
+ 
+/*--- footer section - put whatever you want here ---*/
+#footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    overflow:hidden;
+    background-color: rgba(255, 255, 255, 0.8); 
+    
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+.copyright {
+    font-size: 0.8em;
+    color: #000;
+    margin: 0;
+}
+/*@media screen and (max-width: 768px) {
+  
+}
+
+*/
+
+/*put a media query at 900px here to stop the nav from collapsing any more*/

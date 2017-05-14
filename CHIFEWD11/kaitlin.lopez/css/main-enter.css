@@ -1,0 +1,29 @@
+body {
+	background-image: url("../assets/actuallyextremelyorig.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #EDECEC;
+}
+
+
+h1 {
+	font-size: 60px;
+	font-family: 'Schoolbell', cursive;
+	font-size: 90px;
+}
+
+p a {
+	font-size: 30px;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px 15px 10px 15px;
+	font-family: 'Schoolbell', cursive;
+	font-weight: lighter;
+}
+
+p a:hover {
+	color: #fcbb3a;
+}
+

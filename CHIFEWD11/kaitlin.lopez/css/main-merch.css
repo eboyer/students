@@ -1,0 +1,32 @@
+h1 {
+	position: ;
+}
+
+figure a {
+	font-family: 'Schoolbell', cursive;
+	font-size: 18px;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+figure a:hover {
+	color: #fcbb3a;
+}
+
+figure {
+    display: inline-block;
+    margin-left: 38.3%;
+    text-align: center;
+}
+figure img {
+    vertical-align: top;
+    display: inline;
+}
+figure figcaption {
+    text-align: center;
+}
+
+
+
+

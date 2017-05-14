@@ -1,0 +1,147 @@
+body{
+	color: white;
+	background: #FF6347;
+	text-align: center;
+	margin:0;
+				}
+
+.homebutton {text-align: center;
+			}
+
+/* animation
+   ================================================================ */
+body {
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+/* Navigation
+   ================================================================ */
+
+#menu ul {list-style-type: none;
+		padding: 0;
+		}
+
+#menu ul li span a { 
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	background: black;
+	font-family: 'Amatic SC', cursive;
+}
+
+
+/* Content
+   ================================================================ */
+
+.funfacts {
+	font-size: 20px;
+	color: white;
+	margin: 0;
+	width: 100%;
+	height: 280px;
+	text-align: center;
+	display: inline-block;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Cabin Sketch', cursive;
+}
+
+.funfacts h1 {
+	font-family: 'Miriam Libre', sans-serif;
+}
+
+.funfacts ul {list-style-type: none;}
+
+.guitar {
+	height:500px;
+}
+
+.guitar img {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+}
+
+.won {
+	font-size: 30px;
+	background: #01FF70;
+	color: white;
+	margin: 0;
+	width: 100%;
+	height: 280px;
+	text-align: center;
+	display: inline-block;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Cabin Sketch', cursive;
+}
+
+.won h1 {
+	font-family: 'Miriam Libre', sans-serif;
+}
+
+.won ul {list-style-type: none;}
+
+.lost {
+	font-size: 30px;
+	background: #39CCCC;
+	color: white;
+	margin: 0;
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	display: inline-block;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Cabin Sketch', cursive;
+}
+
+.lost h1 {
+	font-family: 'Miriam Libre', sans-serif;
+}
+
+.lost ul {list-style-type: none;}
+
+
+/* Resizing
+   ================================================================ */
+
+
+
+

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<title>Kenway Time Entry</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600,700,900" rel="stylesheet">
+		<img src="images/kenwaylogo.jpg" class="logo">
+	
+
+
+
+
+	</head>
+
+
+
+
+<body>
+ 
+
+
+	<div class=box1>
+	</div>
+
+	<div class=box2>
+	</div>
+
+
+
+
+	<nav class=headnav>
+		<ul class=headlink>
+			<li class=nav><a ref="file:///C:/Users/Rebecca/Desktop/General%20Assembly/rebecca.specking/main.html"/> Time Entry</li>
+			<li class=nav>Forecast</li>
+			<li class=nav>Expenses</li>
+			<li class=nav>Log Out</li>
+		</ul>
+	</nav>
+
+	<div class="border"></div>
+
+	<div class=background>
+	<div class="buttonfamily">
+	<button class="save">Save</button>
+	<button class="submit">Submit</button>
+	</div>
+
+		<table class="date">
+			<tr>
+				<td class="empty"></td>
+				<td class="date" class="empty">Week of:</td>
+				<td> <input type="date" name="date" id="date"></td>
+			</tr>
+
+		<table class="entry" width="800px">
+			
+			<tr>
+			<th class="add">
+				<button class="add">Add</button>
+			</th>
+			
+				<th width="39%">Project</th>
+			
+				<div class="day">
+					
+						<th width="6%">Sun</th>
+						<th width="6%">Mon</th>
+						<th width="6%">Tues</th>
+						<th width="6%">Wed</th>
+						<th width="6%">Thur</th>
+						<th width="6%">Fri</th>
+						<th width="6%">Sat</th>
+					
+				</div>
+
+				</div>
+				<th width="9%">Total</th>
+				<th class=forecast width="9%">Forecast</th>
+			</tr>
+			<tr>
+				<th class="edit">
+					<button class="edit">Edit</button>
+				</th>
+				<div class="entry1">
+				<td class ="project">Select Project
+					<ul class = "dropdown">
+                   		<li class = "submenuclient">Kenway 
+                   			<ul class = "submenuproject">
+                   				<li>Employment and Operations</li>
+                   			</ul>
+                   		</li>
+                   		<li class = "submenuclient">Accenture
+                    	   <ul class = "submenuproject">
+                           <li>ACC - Staffing and Agency Availability</li>
+                           </ul>
+                        </li>
+                        <li class = "submenuclient">Accruent
+                           <ul class = "submenuproject">
+                             <li>ACR - Architecture Gap and BI Environment</li>
+                           </ul>
+                        </li>                                                                         
+         			
+         		</ul>
+				
+                </td>
+				
+
+					
+
+				</td>
+
+					
+					
+					<td>
+						<input type="number" name="time1" id="time1" placeholder="0" min="0" max="24" value="0">
+					</td>
+					<td>
+						<input type="number" name="time2" id="time2" placeholder="0" min="0" max="24" value="0">
+					</td>
+					<td>
+						<input type="number" name="time3" id="time3" placeholder="0" min="0" max="24" value="0">
+					</td>
+					<td>
+						<input type="number" name="time4" id="time4" placeholder="0" min="0" max="24" value="0">
+					</td>
+					<td>
+						<input type="number" name="time5" id="time5" placeholder="0" min="0" max="24" value="0">
+					</td>
+					<td>
+						<input type="number" name="time6" id="time6" placeholder="0" min="0" max="24" value="0">
+					</td>
+					<td>
+						<input type="number" name="time7" id="time7" placeholder="0" min="0" max="24" value="0">
+					</td>
+					<td>
+					<div class="total1" class="final">
+						<div class="inner">0</div>
+					</div>
+					<td>25 hours
+					</td>
+					</td>
+					
+				</div>
+			</tr>
+
+		</table>
+
+		<table class ="total">
+			<tr width="800px">
+				<td class="empty" width="6%"></td>
+				<td class="total" width="31%">Total</td>
+				<td class="total" width="6%"><div class="suntotal">0</div></td>
+				<td class="total" width="6%"><div class="montotal">0</div></td>
+				<td class="total" width="6%"><div class="tuestotal">0</div></td>
+				<td class="total" width="6%"><div class="wedtotal">0</div></td>
+				<td class="total" width="6%"><div class="thurstotal">0</div></td>
+				<td class="total" width="6%"><div class="fritotal">0</div></td>
+				<td class="total" width="6%"><div class="sattotal">0</div></td>
+				<td class="total" width="8%"><div class="finaltotal">0</div></td>
+				<td class="total" width="8%"><div class="forecasttotal">45 hours</div></td>
+
+			</tr>
+
+		</table>
+
+		</div>
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
+

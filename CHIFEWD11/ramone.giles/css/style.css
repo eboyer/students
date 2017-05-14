@@ -1,0 +1,341 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	/*border: 1px solid black;*/
+}
+
+.clearfix:after {
+	display: block;
+	height: 0;
+	clear: both;
+	line-height: 0;
+	content: ".";
+	visibility: hidden;
+}
+
+/* Your styles here */
+
+@mixin nav(){
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+body{
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background-color: #001f3f;
+	margin: 0;
+}
+
+/* Layout */
+.site{
+	width: 1200px;
+    margin: 0 auto;
+    background-image: url(../images/chicago_panorama.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+div.dashboard{
+	background-color: #0d0516;
+	height: 70px;
+	overflow: hidden;
+	box-shadow: 0px 7px 6px -3px #666666;
+}
+
+.column.column2{
+	height: 68px;
+}
+
+h1{
+	margin: 0;
+	padding: 0;
+	padding-top: 4px;
+	font-family: 'Candal', sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 46px;
+	line-height: 33px;
+	letter-spacing: 2px;
+}
+
+h2{
+	color: #c13f0f;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 35px;
+	line-height: 35px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	padding-top: 30px;
+	text-shadow: 1px 1px 3px #666666;
+}
+
+h3{
+	color: #0d0516;
+	margin: 0;
+	text-align: center;
+
+
+}
+
+h4{
+	font-family: 'Candal', sans-serif;
+	color: black;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .25px;
+	padding-top: 4px;
+	margin: 0;
+}
+
+p{
+	color: black;
+	font-family: 'Cutive Mono', monospace;
+	font-size: 14px;
+}
+
+blockquote{
+	color: #0d0516;
+	font-family: 'Candal', sans-serif;
+	width: 400px;
+	font-size: 23px;
+	line-height: 25px;
+	margin: 0 auto;
+	text-align: center;
+	text-shadow: 1px 1px 3px #666666;
+
+}
+
+input[type="text"]{
+	width: 200px;
+	height: 25px;
+}
+
+input#search{
+	box-shadow: inset 1px 1px 7px #111111;
+	padding-left: 5px;
+	border: 0;
+}
+
+nav a{
+	color: #c13f0f;
+	font-family: 'Candal', sans-serif;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 28px;
+
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+.accounts{
+	position: absolute;
+	float: right;
+	top: 0;
+	right: 20px;
+	font-family: 'Candal', sans-serif;
+	color: #0c6030;
+}
+
+a.current.account{
+	color: #0c6030;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+a.new.account{
+	color: #0c6030;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+
+}
+
+img{
+	width: 50px;
+	height: 70px;
+	padding-left: 3px;
+}
+
+.column{
+	float: left;
+}
+
+.column1 img{
+	display: block;
+}
+
+.column2{
+	position: relative;
+	width: 930px;
+}
+/*.dashtext{
+	width: 680px;
+	height: 80px;
+}
+*/
+
+
+div.navigations{
+	padding: 0;
+	padding-top: 6px;
+	padding-left: 2px;
+	margin: 0;
+}
+
+.navigations{
+	padding: 0;
+	margin: 0;
+}
+
+.column3{
+	padding: 20px 0 0 10px;
+}
+
+.testimonial{
+	width: 40%;
+	margin: 0;
+	padding-top: 230px;
+	position: absolute;
+	top: 0;
+	left: 100px;
+}
+
+.testimonial_package{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.testimonial_image{
+	float: right;
+	width: 60%;
+	height: 60%;
+}
+
+.testimonial_image img{
+	width: inherit;
+	height: inherit;
+	float: right;
+	width: 100%;
+	height: 100%;
+}
+
+.info_box{
+	margin: 0 auto;
+}
+
+.box_contents{
+	background-color: #FF4136;
+	padding-left: 6px;
+	padding-right: 4px;
+	padding-bottom: 0px;
+	margin: 0;
+	width: 198px;
+	height: 62px;
+	margin: 0 auto;
+	box-shadow: 3px 3px 7px #666666;
+}
+
+.date1{
+	background: #ffffff;
+	padding: 5px;
+	color: d5d5d5d;
+	width: 90px;
+	text-align: center;
+	box-shadow: inset 0 0 2px #000000;
+}
+
+.date2{
+	background: #ffffff;
+	padding: 5px;
+	color: d5d5d5d;
+	width: 90px;
+	text-align: center;
+	box-shadow: inset 0 0 2px #000000;
+}
+
+.col{
+	display: inline-block;
+	height: 80px;
+	padding-top: 2px;
+	padding-left: 1px;
+}
+
+.hired{
+	font-family: 'Candal', sans-serif;
+	font-size: 22px;
+	line-height: 20px;
+}
+
+p{
+	margin: 0;
+	margin-top: 5px;
+}
+
+.job_title{
+	font-family: 'Candal', sans-serif;
+	font-size: 17px;
+	margin-bottom: 20px;
+	text-align: center;
+	text-shadow: 1px 1px 3px #666666;
+}
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

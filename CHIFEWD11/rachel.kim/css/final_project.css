@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Global Overrides
+  ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* Global
+   ================================================================ */
+
+
+
+/* Blurb
+   ================================================================ */
+
+
+/* Responsive Size
+   ================================================================ */
+
+
+/* Navigation
+   ================================================================ */
+
+#menu ul {list-style-type: none;
+		}
+
+#menu ul li span a { 
+	color: white;
+  background-color: black;
+	font-size: 30px;
+	text-decoration: none;
+  font-family: 'Amatic SC', cursive;}
+
+/* Banner
+   ================================================================ */
+
+
+body {background: black;}
+
+
+.video-container {
+  position: relative;
+}
+
+video {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+     z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover; 
+
+}
+
+.overlay-desc {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h3 {
+  color: white;
+  font-family: 'Cabin Sketch', cursive;
+  background-color: black;
+  font-size: 30px;
+  display: flex;
+  position: fixed;
+  top: 450px;
+  left: 120px;
+}
+
+p {
+  color: white;
+  font-family: 'Cabin Sketch', cursive;
+  background-color: gray;
+  font-size: 20px;
+  display: flex;
+  position: fixed;
+  top: 495px;
+  left: 120px;
+}
+
+
+

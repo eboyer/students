@@ -1,0 +1,385 @@
+
+
+/*------------------     GLOBARL OVERRIDES       -----------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+
+body, html {
+    height: 100%;
+}
+
+
+
+/*------------------     UNIVERSAL       -----------------------------*/
+
+.global {
+  color: white;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 14pt;
+  font-weight: 400;
+ 
+
+}
+
+.site {
+  background-image: url(../images/greywood.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.content {
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 3rem;
+  padding: 30px 0px 0px 0px;
+  line-height: 100%;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 10px 0px;
+  color: rgb(168, 5, 5);\
+  font-weight: 700;
+}
+
+
+p, td, th {
+  line-height: 150%;
+}
+
+li {
+  list-style: none;
+}
+
+
+.banner {
+  padding: 5%;
+  margin: 10% 0px;
+}
+
+/*------------------     NAV BAR       -----------------------------*/
+
+.navbar {
+  z-index: 10;
+  border-bottom: .25rem solid rgb(168, 5, 5);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(43, 44, 41);
+  z-index: 10;
+
+
+}
+
+.navbar li {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a {
+  display: block;
+  padding: 0px;
+
+}
+
+.navbar a:hover {
+  color: rgb(168, 5, 5);
+}
+
+
+.navbar li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.hamburger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/hamburger.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: fixed;
+  text-indent: -9999px;
+  z-index: 1;
+  justify-content: flex-end;
+}
+
+/*------------------     CONTENT & BANNERS         -----------------------------*/
+.content{
+ overflow: hidden;
+ margin:0 auto;
+ height: 100%;
+}
+
+.banner {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title_banner {
+  background-color: rgba(43, 44, 41, .72)
+}
+
+.about_banner {
+  background-color: rgba(43, 44, 41, .72)
+}
+
+.team_banner {
+ background-color: rgba(43, 44, 41, .72)
+}
+
+.beers_banner {
+ background-color: rgba(43, 44, 41, .72)
+}
+
+.contact-us_banner {
+  background-color: rgba(43, 44, 41, .72)
+}
+
+.micaela_banner{
+background-color: rgba(43, 44, 41, .72)
+}
+
+
+/*------------------     TITLE BAR       -----------------------------*/
+
+.title img {
+  max-width: 30%;
+}
+
+/*------------------        About      -----------------------------*/
+
+.about {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+
+/*------------------     Beer Table    -----------------------------*/
+table {
+  display: block;
+  max-height: 200px;
+  max-width: 950px;
+  overflow-y: scroll;
+  overflow-x: auto;
+  background-color: rgba(168, 5, 5, .72);
+  color: white;
+  margin: 0 auto;
+  font-size: .8rem;
+}
+
+table, th, td {
+  border: 1px solid white;
+  text-align: center;
+}
+
+.beer-table {
+  table-layout: auto;
+  text-align: left;
+  table-layout: fixed;
+}
+
+
+th {
+  font-weight: bold;
+  background-color: rgb(43, 44, 41);
+  color: white
+}
+
+td, th {
+  width: 25%;
+}
+
+
+thead {
+  position: relative;
+}
+
+
+/*------------------        TEAM      -----------------------------*/
+
+.team_pics {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.team_wrap {
+  display: inline-block;
+  position: relative;
+  max-height: 200px;
+}
+
+.team_wrap p {
+  display: flex;
+  line-height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.team_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.72);
+  color: #D9D9DB;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .05s, visibility .2s;
+}
+
+.team_wrap:hover .team_description {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*------------------     CONTACT US    -----------------------------*/
+
+input[type=text], select {
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 auto;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #262626;
+}
+
+input[type=radio] {
+  display: inline-block;
+ }
+
+.contact-us {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.contact-us ul li {
+  padding: 10px 0px  2px 0px;
+}
+
+form p {
+  margin: 10px 0px;
+}
+
+button {
+  margin: 5px 0 0 0;
+  background-color: rgb(168, 5, 5);
+  border-radius: 5px;
+  border: 5px solid rgb(168, 5, 5);
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Inknut Antiqua', serif;
+  line-height: 150%;
+}
+
+/*------------------     RESPONSIVE   -----------------------------*/
+
+@media screen and (max-width: 500px) {
+  header {
+    background-color: rgb(43, 44, 41);
+  }
+
+  .navbar {
+    display: none;
+    float: none;
+  }
+
+  .navbar li {
+    float: none;
+  }
+
+  .navbar li a {
+    display: block;
+    float: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+
+  p {
+   margin: 0 0 0px;
+  }
+
+  .hamburger {
+   position: fixed;
+    display: block;
+    right: 10px;
+    top: 10px;
+  }
+
+  h1 {
+   padding: 0px;
+   font-size: 2rem;
+  }
+
+  .banner {
+    height: 100%;
+  }
+
+  .team_img, .team_description {
+    width: 150px;
+    height: 150px;
+  }
+
+  .team_wrap p {
+    display: flex;
+    line-height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+input[type=text], select {
+    width: 90%;
+
+}
+
+}
+
+
+/*------------------     next   -----------------------------*/
+
+

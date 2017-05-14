@@ -1,0 +1,715 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+.clearfix:after {
+	display: block;
+	height: 0;
+	clear: both;
+	line-height: 0;
+	content: ".";
+
+	visibility: hidden;
+}	
+body, html {
+    height: 100%;
+    margin: 0 auto;
+	font-family: 'Teko', sans-serif;
+	width: 100%;
+}
+
+h1 {
+
+}
+
+h2 {
+	font-family: 'Teko', sans-serif;
+	font-size: 64px;
+	line-height: 64px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	padding: 50px 70px 20px 70px;
+    text-align: center;
+}
+
+h3 {
+	font-family: 'Teko', sans-serif;
+	font-size: 32px;
+	line-height: 32px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	padding: 30px 0px 0px 0px;
+    text-align: center;	
+}
+
+h4 {
+    font-family: 'Teko', sans-serif;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+	
+}
+
+h5 {
+	
+}
+
+h6 {
+	
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.columns.clearfix {
+	padding: 0px 100px;
+	text-align: center;
+    height: 850px;
+}
+
+.columns .column {
+	float: left;
+	display: inline;
+	width: 50%;
+	padding: 30px;
+    height: 850px;
+}
+
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0px 40px;
+	border-radius: 10px;
+}
+
+header.container {
+	align-items: center;
+	height: 80px;
+}
+
+nav {
+	border-radius: inherit;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+	padding-left: 35px;
+}
+
+.container a {
+	font-family: 'Teko', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: right;
+  	color: black;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	letter-spacing: 2px;
+}
+
+a:hover{
+	color: rgba(0,0,0, 0.5);
+	cursor:pointer;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+.hero-image {
+    background-image: url("../images/Untitled-2.jpg");
+    height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text h1 {
+	font-family: 'Teko', sans-serif;
+	font-size: 100px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-top: 35px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text p {
+	font-family: 'Teko', sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #FFF;
+}
+
+.signup {
+    background-image: url("../images/investment-image.png");
+    height: 455px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.signup .items{
+    padding: 50px;
+}
+
+.reverse-items p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: black;
+    padding: 10px 0px 40px 0px;
+}
+
+.reverse-items a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #3272B8;
+    border: 1px solid #3272B8;
+    padding: 10px 20px;
+}
+
+.reverse-items a:hover {
+    background-color: #3272B8;
+    color: white;
+}
+
+.items h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding: 15px 0px 15px 0px;
+    text-align: center; 
+    color: white;
+}
+
+.items p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+}
+
+.items ul {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.items li {
+    display: inline;
+    padding: 0px;
+}
+.items a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    border: 1px solid #FFF;
+    padding: 10px 20px;
+}
+.items a:hover{
+    color: black;
+    background: white;
+    cursor:pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.trackman-content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: black;
+    padding: 10px 0px 40px 0px;
+}
+
+.trackman-content ul {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.trackman-content li {
+    display: inline;
+    padding: 0px;
+}
+.trackman-content a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #EC691A;
+    border: 1px solid #EC691A;
+    padding: 10px 20px;
+}
+.trackman-content a:hover{
+    color: white;
+    background: #EC691A;
+    cursor:pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+.trackman-content {
+    background-color: #E9E9E9;
+    height: 430px;
+    padding: 50px 100px;
+}
+
+.trackman-content img {
+    float: left;
+    margin-right: 55px;
+}
+
+.trackman-content h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 30px 0px 0px 0px;
+    text-align: left; 
+}
+
+.trackman-content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.footer-content {
+    background-color: black;
+    height: 470px;
+}
+
+.footer-content img {
+    margin-bottom: 30px;
+}
+
+.footer .f1 .content a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: rgba(255,255,255, 0.5);
+    width: 100%;
+}
+
+ .footer .f1 .content a:hover {
+    color: rgba(255,255,255,0.9);
+    cursor:pointer;
+    text-transform: none;
+    letter-spacing: 0px;
+} 
+
+ .f1 {
+    background: black;
+    margin: 0;
+    width: 16%;
+    float: left;
+    padding: 100px 2%;
+ }
+
+ .footer .f2 .content a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: rgba(255,255,255, 0.5);
+    width: 100%;
+}
+
+ .footer .f2 .content a:hover {
+    color: rgba(255,255,255,0.9);
+    cursor:pointer;
+    text-transform: none;
+    letter-spacing: 0px;
+}    
+
+ .f2 {
+    background: black;
+    margin: 0;
+    width: 16%;
+    float: left;
+    padding: 100px 2%;    
+ }
+
+.footer .f3 .content a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: rgba(255,255,255, 0.5);
+    width: 100%;
+}
+
+ .footer .f3 .content a:hover {
+    color: rgba(255,255,255,0.9);
+    cursor:pointer;
+    text-transform: none;
+    letter-spacing: 0px;
+} 
+
+ .f3 {
+    background: black;
+    margin: 0;
+    width: 16%;
+    float: left;
+    padding: 100px 2%;        
+ }
+
+ .footer .f4 .content a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: rgba(255,255,255, 0.5);
+    width: 100%;
+}
+
+ .footer .f4 .content a:hover {
+    color: rgba(255,255,255,0.9);
+    cursor:pointer;
+    text-transform: none;
+    letter-spacing: 0px;
+} 
+
+  .f4 {
+    background: black;
+    width: 52%;
+    float: left;
+    padding: 100px 1%;       
+
+ }
+
+ .f1,
+ .f2,
+ .f3,
+ {
+
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   display: inline-block;
+   text-align: right;
+   font-size: 12px;
+   padding: 0 8%;
+   min-width: 250px;
+ }
+
+ .content h3 {
+    color: white;
+    padding: 0px 0px 30px 0px;
+ }
+
+.Form{
+  width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.Form-column{
+  width: 50%;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.Form-column li{
+  margin: 0 0 10px 0;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+
+.Form-column li.short{
+  height: 50px;
+}
+
+.Form-column li.long{
+  height: 110px;
+}
+
+.Form-column li .parsley-errors-list{
+  position: absolute;
+  top: 46px;
+  left: 0;
+  z-index: 1;
+  background: #FD8A71;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.Form-column li .parsley-errors-list li{
+  margin: 0;
+  padding: 10px;
+}
+
+.Form label{
+  display: none;
+}
+
+.Form input[type=text],
+.Form textarea,
+.Form input[type=submit]{
+  height: 50px;
+}
+
+.Form input[type=text],
+.Form textarea{
+  background: #ffffff;
+  border: 0;
+  padding: 6px 12px;
+  color: #B4ABAA;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.Form input[type=text]:focus,
+.Form textarea:focus,
+.Form input[type=submit]{
+  outline: none;
+}
+
+.Form textarea{
+  resize: none;
+  height: 110px;
+}
+
+.Form input[type=submit]{
+  background: #3272B8;
+  border: 0;
+  padding: 10px 20px;
+  color: #ffffff;
+  border-radius: 4px;
+  height: 50px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+.hero-text h1 {
+	font-family: 'Teko', sans-serif;
+	font-size: 95px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-top: 35px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text p {
+	font-family: 'Teko', sans-serif;
+	font-size: 29px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #FFF;
+}
+
+.affiliates .affiliate-logos h2 {
+    padding: 0px 235px;
+}
+
+}
+@media screen and (max-width: 1255px) {
+
+.hero-text h1 {
+	font-family: 'Teko', sans-serif;
+	font-size: 90px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-top: 35px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text p {
+	font-family: 'Teko', sans-serif;
+	font-size: 27px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #FFF;
+}
+
+
+@media screen and (max-width: 1185px) {
+
+.hero-text h1 {
+	font-family: 'Teko', sans-serif;
+	font-size: 88px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-top: 35px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text p {
+	font-family: 'Teko', sans-serif;
+	font-size: 26px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #FFF;
+}
+}
+
+@media screen and (max-width: 1150px) {
+
+.hero-text h1 {
+	font-family: 'Teko', sans-serif;
+	font-size: 78px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-top: 35px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text p {
+	font-family: 'Teko', sans-serif;
+	font-size: 25px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #FFF;
+}
+}
+@media screen and (max-width: 600px) {
+
+  .container {
+    flex-direction: column;
+  }
+

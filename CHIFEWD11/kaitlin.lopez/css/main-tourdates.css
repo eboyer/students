@@ -1,0 +1,15 @@
+ul li {
+	list-style-type: none;
+	font-size: 25px;
+	font-family: helvetica;
+	margin-top: 15px;
+	font-family: 'Schoolbell', cursive;
+
+}
+
+ul {
+	padding-left: 0px;
+	margin-top: 50px;
+}
+
+

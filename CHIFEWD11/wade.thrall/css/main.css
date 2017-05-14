@@ -1,0 +1,912 @@
+/*font-family: 'Lily Script One', cursive;
+font-family: 'UnifrakturMaguntia', cursive;
+font-family: 'Cherry Swash', cursive;
+font-family: 'UnifrakturCook', cursive;
+font-family: 'Galada', cursive;*/
+
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.clearfix:after {
+    display: block;
+    height: 0;
+    clear: both;
+    line-height: 0;
+    content: ".";
+    visibility: hidden;
+}
+
+blockquote {
+  color: yellow;
+  font-size: 1.1rem;
+  margin: 1em 1.8vw;
+}
+
+.attribution {
+  font-size: .9rem;
+  font-style: italic;
+  text-align: left;
+  margin-left: 1.8vw;
+}
+
+.caption {
+  font-size: .9rem;
+  font-style: italic;
+  text-align: center;
+  color: inherit;
+  margin:5px auto;
+  display:block;
+  position:relative;
+}
+
+body {
+    text-align: left;
+    color: #000000;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 0;
+   
+}
+
+a,
+a:visited {
+  text-decoration: none;  
+  color:inherit;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 31px;
+  position: absolute;
+}
+
+h1 {
+    font-family: 'Galada', cursive;
+    font-weight: 400;
+    font-size: 2.8rem;
+    padding: 0 16px 0px 0px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    float: left;
+    margin: 0;
+    display: block;
+    line-height:3.2rem;
+    /*text-shadow: 0px 0px 15px #ffffff;*/
+}
+
+.tagline {
+    font-family: Dosis, sans-serif;
+    font-weight: bold;
+    color: #f5f5f5;
+    font-size: 1.3rem;
+    float: left;
+    margin:0;
+    text-shadow: 0px 0px 7.5px #000000;
+}
+
+.banner {
+    font-family: 'Galada', cursive;
+    font-weight: 400;
+    font-size: 2.8rem;
+    color: rgba(255, 255, 255, 0.15);
+    text-shadow: -4px 3px 0px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    letter-spacing: 3px;
+    margin: 38px 49px;    
+    line-height: 1.1;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 1.7rem;
+}
+
+h3 {
+    font-weight:400;
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 1.3em;
+    /*margin: 1.33em 0;*/
+}
+
+h5 {
+  font-size: 1.03em;
+  margin: 0.67em 0;
+}
+
+.subhead {
+  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.headline {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.textBox {
+  position: relative;
+  border-left: 2px solid;
+  border-radius: 15px;
+  padding: 1.9vw;
+  margin-bottom:30px;
+  max-width:600px;  
+}
+
+.textBox .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.textBox a:hover {
+  color: #da0808;
+}
+
+ul {
+  margin:3px;
+}
+
+figure {
+  max-width: 500px;
+}
+
+figcaption {
+
+}
+
+.twoCol {
+    display: flex;
+    margin: 16vh auto 0vh auto;
+    max-width: 66vw;
+}
+
+.formLabel {
+  font-weight:bold;
+}
+
+.formContainer {
+  font-size: .9rem;
+}
+
+label {
+
+}
+
+input {
+  line-height: normal;
+  border-radius: 5px;
+  height: 30px;
+  margin: 8px 0;
+  padding: 5px;
+  max-width: 47vw;
+}
+
+textarea {
+border-radius: 5px;
+margin:8px 0;
+padding: 5px;
+max-width: 47vw;
+}
+
+.btnSubmit {
+  background color:white;
+}
+
+.short_explanation {
+  margin: 8px 0;
+  font-style:italic;
+}
+
+.videoResponsive{
+    overflow:hidden;
+    padding-bottom:75%;
+    position:relative;
+    height:0;
+}
+.videoResponsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/*--- horizontal &quot;block&quot; menu ---*/
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 900; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #fff; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a, a:visited {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #b5b5b5;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #da0808;
+    font-weight: bold;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+ 
+/* container - place inside each section or around the entire page depending on your layout */
+.site {
+    /*max-width: 1366px;*/
+    margin: 0 auto;
+    background-color: maroon;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    min-height: 100vh;
+    padding: 0 40px;
+}
+
+.content {
+    max-width: 85vw;
+    text-align: left;    
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 auto;
+    min-height: inherit;
+}
+
+.more {
+  float: right;
+  text-align: right;
+  font-size: 1rem;  
+}
+
+/*.more a, a:visited {
+  color:#ff8453;
+}*/
+
+.more a:hover {
+  font-weight: bold;
+  color:#da0808;
+}
+.blurbPhoto {
+    float: right;
+    max-width: 40vw;
+    height: auto;
+    border-radius: 7px;
+    margin: 10px 0 0 20px;
+    display: block;
+}
+
+.blurb {
+    position: relative;
+    float: left;
+    display: block;
+    padding: 1.5vh 1.5vw;
+    border-radius: 15px;
+    color: #000;
+}
+
+.blurbOnDark {
+    
+    float: left;
+    width: 37%;
+    display:block;
+    background-color: rgba(255,255,255,.5);
+    color: black;
+    border-radius: 7px;
+}
+
+.blurbOnLight {
+    
+    float: left;
+    width: 73vw;
+    display:block;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    border-radius: 7px;
+    clear:both;
+}
+
+.blurb p {
+  clear: both;
+  float: left;
+}
+
+.blurb a:hover {
+  font-weight: bold;
+}
+
+
+/*--- header section - put whatever you want here ---*/
+
+/*Sections*/
+
+#homepage {
+    background-image: url(../images/ribbons_stain.jpg);   
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+  #homepage .content {
+    /*align-items: center;*/
+  }
+
+ /* #homepage .blurb p, a {
+    color: #000;
+    }
+*/
+  #homepage .blurb {
+    padding: 0px;
+    width: 24vw;
+    top: 37%;
+    }
+
+  #homepage .textBox {
+    width: 27vw;
+    border-radius: 15px;
+    margin-bottom:30px;
+    margin-top: 40vh;
+    }
+
+    #homepage .textBox a {
+      color: purple;
+    }
+
+    .moreHomepage {
+      display:none;
+      transition: .25s ease;
+    }
+
+
+#liturgical {
+    background-image: url(../images/2014_525_MicheleBeaulieux-10528-crop.jpg);
+    background-position: top left;
+    background-size: 116%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  #liturgical .content {
+    justify-content: flex-start;
+    }
+
+  #liturgical .textBox {
+    width: 39vw;
+    color: white;
+    margin-top: 34vh;
+    margin-bottom: 10vh;
+    border-radius: 15px;
+    
+    }
+
+  #liturgical .blurb {
+    padding: 1.5vh 1.5vw;
+    width: 35vw;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    }
+
+    .moreLit {
+      display:none;
+    }
+
+#lordsprayer {
+    background-image: url(../images/dark-purple.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+}
+
+  #lordsprayer .blurb {
+      position: relative;
+    
+    float: left;
+    /* width: 39vw; */
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #lordsprayer .twoCol {
+    max-width: 66vw;
+    margin-top: 9vw;
+  }
+
+  #lordsprayer .blurbPhoto {
+    max-width: 100%;
+    text-align: right;
+    margin-top: 30px;
+    }
+
+  #lordsprayer .textBox {
+    color: white;
+    max-width: 66vw;
+    }
+  #lordsprayer a:hover {
+    color:#da0808;
+  }
+
+  #lordsprayer .content {
+    align-items: flex-start;
+    }
+
+  #lordsprayer .more {
+    float:left;
+  }
+
+  .moreLord {
+    display:none;
+  }
+
+.contactForm {
+    float: left; 
+    height: auto;
+    margin-left: 20px;
+    border:none;
+    font-size: 1rem;
+}
+
+#rosary {
+    background-image: url(../images/475663144.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;   
+}
+
+  #rosary .blurb {
+    
+    float: left;
+    }
+
+ #rosary .textBox {
+    max-width: 66vw;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #ffffff;
+    border-radius: 7px;
+    padding: 20px;
+    border: none;
+}
+
+  #rosary .blurbPhoto {
+    max-width: 500px;
+    margin: 10px 0 0 20px;
+    text-align: right;
+  }
+
+  #rosary .more {
+    float:left;
+  }
+
+  .moreRosary {
+    display:none;
+  }
+
+#testimonial {
+  background-image: url(../images/green-silk.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;   
+}
+
+  #testimonial.blurb {
+      position: absolute;
+        
+       /* float: left;*/
+        width: 73vw;
+        display:block;
+        background-color: rgba(0,0,0,.5);
+        color: white;
+        border-radius: 7px;
+        margin: 8px 0;
+        }
+
+  #testimonial .textBox {
+    max-width:1000px;
+    text-overflow: ellipsis;
+    }
+
+  #testimonial .textBox a {
+    color: #de8b0b;
+    }
+
+  #testimonial .content {
+    align-items: center;
+    width: 75vw;
+    /*background-color: rgba(0,0,0,.5);*/
+    color: white;
+    border-radius: 7px;
+    clear:both;
+    
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    }
+
+    #testimonial .twoCol {
+    display: flex;
+    margin: 16.2vh auto 0vh auto;
+    max-width: 60vw;
+    }
+
+    .moreTest {
+      display:none;
+    }
+
+    #testimonial .blurbPhoto {
+      max-width:500px;
+    }
+
+    #testimonial .more {
+      float:left;
+      padding-left:20x;
+    }
+
+#michele {
+    background-image: url(../images/michele_crop.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;   
+    background-attachment: fixed; 
+}
+
+  #michele .blurb {
+    width:32%;
+    margin-top: 100px;
+  }
+
+  #michele .textBox {
+    max-width: 684px;
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    border-radius: 7px;
+    
+    margin: 60vh auto 5vh auto;
+    border: none;
+    }
+
+  .moreMichele {
+    display:none;
+  }
+
+#events {
+  background-image: url(../images/fire-walk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-attachment: fixed;
+  background-color: #1392a7;
+}
+  #events .blurb {    
+    float: left;
+    width: 39%;
+    display:block;
+    background-color: rgba(0,0,0,.5);
+    color: black;
+    border-radius: 7px;
+    /*clear:both;*/
+  }
+  #events .container {
+    background-color: rgba(98, 30, 172, 0.87);
+  }
+
+  #events .twoCol {
+    max-width: 66vw;
+  }
+
+  #events .textBox {
+    color: #fff;
+    max-width: 66vw;
+    border-color: inherit;
+  }
+
+  #events a {
+    color: #d8b124;
+  }
+
+  #events .more {
+    float:left;
+  }
+
+  #events figure {
+    text-align: right;
+  }
+
+  .moreEvents {
+    display:none;
+  }
+
+  #events .caption {
+    color:inherit;
+  }
+
+  .year16 {
+    
+  }
+
+  .year15 {
+    display:none;
+  }
+
+  .year14 {
+    display:none;
+  }
+
+  .year13 {
+    display:none;
+  }
+
+  .year12 {
+    display:none;
+  }
+
+  .occasion {
+    font-weight: 700;
+  }
+
+  .date {
+    margin:0;
+  }
+
+#contact {
+  background-image: url(../images/grey-silk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+}
+
+  #contact .twoCol{
+  display: flex;
+    align-items: center;
+    margin: 10vh auto 0vh auto;
+    max-width: 66vw;
+  }
+
+  #contact .content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width:90%;
+  }
+
+  #contact .textBox {
+    color: #10109e;
+    border-color: inherit;
+    min-width: 25vw;
+  }
+
+
+ 
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.nav-south a{
+    color: #da0808;
+    padding: 0 10px;
+ }
+
+
+
+/*want to add a full-width background color to each li element*/
+
+.nav-south a:hover {
+  color: #ffffff;
+  background-color: #da0808;
+  padding: 0 10px;
+}
+
+.hamburger {
+  display: none;
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/hamburger_rev.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 700;
+  top: 27px;
+  left: 27px;
+  padding: inherit;
+  float: left;
+}
+
+ 
+/*--- footer section - put whatever you want here ---*/
+#footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    overflow:hidden;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.nav-south ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  color: #000;
+  margin: 0;
+  text-align: right;
+  margin-right: 40px;
+}
+
+
+/*media queries*/
+
+@media screen and (max-width: 1168px) {
+  
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  
+}
+
+@media screen and (max-width: 915px) {
+  
+  html {
+    font-size: 17px;
+    }
+
+    .container {
+      padding: 0 20px;
+    }
+
+    header {
+      margin-top: 18px;
+      margin-left: 46px;
+    }
+
+    ul {
+      padding: 0 15px;
+    }
+
+  #homepage {
+    background-position: top right;
+    }
+
+  .nav-south {
+      display: none;
+    }
+  .hamburger {
+    display:block;
+    }
+  
+  #contact .twoCol {
+    flex-direction: column;
+    flex-wrap:wrap;
+  }
+
+@media screen and (max-width: 768px) {
+  html {
+  font-size: 16px;
+  }
+
+  #homepage .textBox {
+    width: 49vw;
+    background-color: rgba(255,255,255,0.7);
+    border:none;
+  }
+  .tagline {
+    clear: both;
+  }
+  #liturgical .blurb {
+    width:60%;
+    clear:both;
+  }
+
+  #testimonial .blurbPhoto {
+    float: none;
+    margin: 1vh auto;
+    max-width: 100%;
+  }
+
+  h1 {
+    text-shadow: 0px 0px 8px #000000;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  #rosary .textbox {
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 451px) {
+
+  #homepage {
+      background-position: bottom right;
+      }
+  #homepage .textBox {
+    width:100%;
+    margin-top:54vh;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .hamburger {
+    left:14px;
+  }
+
+  #homepage .textbox {
+    background-color: rgba(255,255,255,0.8);
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  #homepage {
+    
+  }
+}
+

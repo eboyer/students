@@ -1,0 +1,94 @@
+@import "reset";
+
+$white: #ffffff;
+$black: #666666;
+
+$bottomSpacing: 20px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+
+@mixin nav($spacing){
+	margin: $spacing;
+	padding: $spacing;
+	list-style: none;
+}
+
+
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+.clearfix:after {
+	display: block;
+	height: 0;
+	clear: both;
+	line-height: 0;
+	content: ".";
+	visibility: hidden;
+}
+
+/* Your styles here */
+body{
+	background: $white;
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: $black;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+	color: $black;
+}
+p{
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	margin: 0 0 10px 0;
+	color: $black;
+}
+p:last-child{
+	margin-bottom: 0;
+}
+
+/* Layout */
+.site{
+	padding: $bottomSpacing;
+
+	h1{
+		font-size: 20px;
+	}
+
+	p{
+		font-size: 14px;
+	}
+}
+
+
+.layout{
+	padding: $bottomSpacing;
+}
+
+
+ul{
+	@include nav(300px);
+}

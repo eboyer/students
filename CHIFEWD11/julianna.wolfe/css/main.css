@@ -1,0 +1,471 @@
+/* ==========================================================================
+   Global Overrides
+  ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* ==========================================================================
+   Author's custom styles
+  ========================================================================== */
+
+
+/* Global
+   ================================================================ */
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #222;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+li {
+  list-style: none;
+  color:black;
+  display:block;
+}
+
+/* Headings
+   ================================================================ */
+h1 {
+  line-height: 1;
+  float: left;
+  margin-top: 20px;
+  color:black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 58px;
+    margin: .5em 0;
+    word-spacing: .2em;
+    text-align: center;
+}
+
+
+h2 {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
+  color:white;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  margin: 0;
+}
+
+
+
+/* Text Styles
+   ================================================================ */
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.info p a,
+.info p a:visited {
+  text-decoration: underline;
+  color: black;
+}
+
+
+
+p {
+  margin: 0 0 30px;
+}
+
+
+
+
+/* Header/Footer
+   ================================================================ */
+
+header {
+  color: white;
+  position: relative;
+  padding: -1 30px;
+}
+
+footer {
+  clear: both;
+  padding: 25px 38px;
+  background-color: black;
+  color:white;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
+/* Navigation
+   ================================================================ */
+nav {
+  float: right;
+  padding-left: 36px;
+  text-align: right;
+}
+
+nav li {
+  float: left;
+  text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 29px 30px;
+}
+
+nav a:hover {
+  color:red;
+}
+
+header nav strong {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  size:24px;
+}
+
+hr {
+border: none;
+    border-top: 4px dotted black;
+    color: #black;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+}
+
+
+/* Buttons
+   ================================================================ */
+/*.button,
+.button:visited {
+  font-family: "Oswald", sans-serif;
+  display: block;
+  padding: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #222;
+  border-radius: 5px;
+  background: #deece6;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+}
+*/
+/* Super info button in blurb */
+.blurb .button {
+  transition: all .2s ease;
+  color: white;
+  background: #fa4542;
+}
+
+.blurb .button:hover {
+  color: white;
+  background: #f6201d;
+}
+
+.hamburger {
+  display: none;
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/hamburger.png);
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Banner
+   ================================================================ */
+.blurb {
+  float: left;
+  width: 520px;
+  margin: 35px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.blurb p {
+    color: white;
+    font-size: 22px;
+    padding-left: 20px;
+    width: 466px;
+}
+
+.blurb h2 {
+  padding-left: 20px;
+}
+
+.banner {
+  overflow: hidden;
+  padding: 3%;
+  background-image: url(../images/filter-interior.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannercoffee{
+  overflow: hidden;
+  padding: 3%;
+  background-image: url(../images/coffee-board.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: dotted black;
+  border-width: 4px;
+  padding-top: 1px;
+}
+
+
+/* Info Sections (Call to action columns)
+   ================================================================ */
+.info {
+  float: left;
+  width: 33%;
+  margin: 25px 0;
+  padding: 24px 38px;
+  overflow:hidden;
+  border-right: 1px solid grey;
+}
+
+.info:last-of-type {
+  border-right: none;
+}
+
+.infofood {
+  float: left;
+  width: 50%;
+  margin: 25px 0;
+  padding: 24px 38px;
+  overflow:hidden;
+  display:inline-block;
+}
+
+.infofood2 {
+  float: left;
+  width: 50%;
+  margin: 36px 0;
+  padding: 24px 10px;
+  overflow:hidden;
+  display:inline-block;
+}
+
+section.clearfix.banner {
+
+  border-top: dotted black;
+  border-width: 4px;
+  padding-top: 1px;
+}
+
+section.info p {
+   font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    margin: .5em 0;
+}
+
+section.info li {
+   font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    margin: .5em 0;
+    padding-left: -2px;
+}
+
+#container {
+float: left;
+width: 66.6666667%;
+display:inline-block;
+}
+
+h5 {
+    font-size: 49px;
+    color:black;
+    margin:0px;
+    margin-bottom:20px;
+  }
+
+form {
+    margin-bottom: 15px;
+}
+
+element.style {
+    width: 90%;
+}
+
+@media screen and (max-width: 1008px) {
+    header {
+      padding: 20px;
+    }
+
+    h1 {
+      float: none;
+      margin-top: 0;
+      text-align: left;
+    }
+
+    nav {
+      display: none;
+      float: none;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    nav li {
+      float: none;
+      padding: 15px;
+    }
+
+    nav a {
+      padding: 0;
+      font-size: 22px;
+      line-height: 22px;
+    }
+    .tagline{
+      display:none;
+    }
+
+    .hamburger {
+      display: block;
+    }
+
+
+  p{
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  h2 {
+    font-size: 24px;
+    color:white;
+
+
+  }
+
+    h5 {
+    font-size: 49px;
+    color:black;
+  }
+
+
+.blurb {
+    float: left;
+    width: 520px;
+    margin: 35px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  .blurb .button {
+    transition: all .2s ease;
+    margin: 0 auto;
+
+  }
+  .info {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 38px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+
+  .button, .button:visited {
+    padding: 8px;
+    font-size: 16px;    
+   
+  }
+
+hr {
+    border: none;
+    border-top: 3px dotted rgba(0,0,0,.75);
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+}
+
+nav.dotlines-navigation {
+  color:black;
+  display:block;
+  padding-top: -40px
+  padding-bottom:-10px;
+}
+section.clearfix.banner {
+
+  border-top: dotted black;
+  border-width: 3px;
+  padding-top: 1px;
+}
+
+.bannercoffee{
+  border-top: dotted black;
+  border-width: 3px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 40px;
+ 
+}
+
+  .blurb {
+    
+    margin: 0 auto;
+    margin-right: -3px;
+    margin-left: -12px;
+    padding-top: 20px;
+    padding-left: 7px;
+    background-color: rgba(0, 0, 0, .8);
+    box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+.blurb p {
+    color: white;
+    font-size: 22px;
+    padding-left: 20px;
+    width: 370px;
+}
+
+.infofood {
+  margin:0px;
+  width: 100%;
+
+}
+
+.infofood2 {
+  width: 100%;
+  display: inline;
+  margin-left: 30px;
+  margin-top:0px;
+  padding-top: 0px;
+}
+
+
+
+
+
+
